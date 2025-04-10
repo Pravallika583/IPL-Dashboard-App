@@ -1,0 +1,38 @@
+/* Write your CSS here */
+
+.teammatch-bg-container {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #d91c1f, #a4261d);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.teammatch-details {
+  width: 95%;
+  margin: auto;
+  min-height: 100vh;
+}
+.team-banner-url {
+  width: 100%;
+}
+.latest-match-heading {
+  color: white;
+  margin-top: 20px;
+}
+.loader-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recentmatches-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+@media screen and (max-width:767px){
+  .recentmatches-container{
+    gap:25px;
+  }
+}
