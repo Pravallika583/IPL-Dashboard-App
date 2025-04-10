@@ -1,4 +1,3 @@
-In this project, let's build an **IPL Dashboard App** by applying the concepts we have learned till now.
 
 ### Refer to the image below:
 
@@ -32,10 +31,10 @@ In this project, let's build an **IPL Dashboard App** by applying the concepts w
 ### Completion Instructions
 
 <details>
-<summary>Functionality to be added</summary>
+<summary>Functionality added</summary>
 <br/>
 
-The app must have the following functionalities
+The app have the following functionalities
 
 - When the app is opened, Home Route should be displayed
 - When the Home Route is opened,
@@ -76,7 +75,6 @@ Returns a response containing the list of all IPL teams
       "name": "Royal Challengers Bangalore",
       "id": "RCB",
       "team_image_url": "https://assets.ccbp.in/frontend/react-js/rcb-logo-img.png",
-      // use value of the key 'name' for alt as `${name}`
     },
     ...
   ],
@@ -153,10 +151,8 @@ Returns a response containing details of all recent matches of a team
 </details>
 
 <details>
-<summary>Implementation Files</summary>
+<summary>Implemented Files</summary>
 <br/>
-
-Use these files to complete the implementation:
 
 - `src/App.js`
 - `src/components/Home/index.js`
@@ -171,51 +167,6 @@ Use these files to complete the implementation:
 - `src/components/MatchCard/index.css`
 </details>
 
-### Quick Tips
-
-<details>
-<summary>Click to view</summary>
-<br>
-
-- To display the animated loader, we need to import the Loader component using the below statement
-
-  ```
-  import Loader from 'react-loader-spinner'
-  ```
-
-- In order to display the given animated loader, pass the `type` and `color` props to the `Loader` component with values as **Oval** and **#ffffff** , respectively
-
-  ```
-  <Loader type="Oval" color="#ffffff" height={50} width={50} />
-  ```
-
-</details>
-
-### Important Note
-
-<details>
-<summary>Click to view</summary>
-
-<br/>
-
-**The following instructions are required for the tests to pass**
-
-- The banner image in the Team Matches Route should have the alt attribute value as `team banner`
-- The alt attribute values for the images received from the response are given in the **Example response**
-- The API responses received from the given api URLs should be converted to camel case
-- Wrap the `Loader` component with an HTML container element and add the `testid` attribute value as `loader` to it as shown below
-  ```
-  <div testid="loader">
-      <Loader type="Oval" color="#ffffff" height={50} width={50} />
-  </div>
-  ```
-- Render HomeRoute component when path in URL matches `/`
-- Render TeamMatchesRoute component when path in URL matches `/team-matches/:id`
-- No need to use the `BrowserRouter` in `App.js` as we have already included in `index.js` file
-- Each TeamMatchesRoute should have different gradient colors as background based on the selected team
-
-</details>
-
 ### Resources
 
 <details>
@@ -223,7 +174,7 @@ Use these files to complete the implementation:
 
 - [https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png](https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png)
 - [https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png](https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png)
-- [https://assets.ccbp.in/frontend/react-js/ipl-logo-img.png](https://assets.ccbp.in/frontend/react-js/ipl-logo-img.png) alt should be **ipl logo**
+- [https://assets.ccbp.in/frontend/react-js/ipl-logo-img.png](https://assets.ccbp.in/frontend/react-js/ipl-logo-img.png) alt = **ipl logo**
 
 </details>
 
@@ -268,10 +219,3 @@ Use these files to complete the implementation:
 - Bree Serif
 
 </details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
